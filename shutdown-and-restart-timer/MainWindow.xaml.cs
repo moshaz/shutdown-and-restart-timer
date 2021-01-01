@@ -32,9 +32,7 @@ namespace shutdown_and_restart_timer
         {
             InitializeComponent();
             addItemsToComboBoxes();
-
         }
-
 
         private void addItemsToComboBoxes() {
 
@@ -55,7 +53,6 @@ namespace shutdown_and_restart_timer
 
         private void okBtn_Click(object sender, RoutedEventArgs e)
         {
-
             bool isEnteredNumber = int.TryParse(valTxt.Text, out valNum);
             string message = "";
 
