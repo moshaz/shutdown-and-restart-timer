@@ -6,14 +6,15 @@
         xmlns:local="clr-namespace:shutdown_and_restart_timer"
         mc:Ignorable="d"
         Title="Shutdown/Restart Timer" Height="450" Width="375.168" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Label x:Name="titleLabel" Content="Shutdown/Restart Timer" HorizontalAlignment="Left" Margin="51,27,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <Label Content="in" HorizontalAlignment="Left" Margin="73,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.676,0.121" Height="47" Width="49" FontSize="22"/>
-        <ComboBox x:Name="choiceCmb" HorizontalAlignment="Left" Margin="73,93,0,0" VerticalAlignment="Top" Width="219" Height="40" FontSize="22"/>
-        <TextBox x:Name="valTxt" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="42" Margin="73,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71" FontSize="22" MaxLength="6"/>
-        <ComboBox x:Name="hmsCmb" HorizontalAlignment="Left" Margin="172,208,0,0" VerticalAlignment="Top" Width="120" Height="40" FontSize="22"/>
-        <Button x:Name="okBtn" Content="OK" HorizontalAlignment="Left" Margin="73,284,0,0" VerticalAlignment="Top" Width="219" Height="50" FontSize="20" Click="okBtn_Click"/>
-        <Button x:Name="cancelTimerBtn" Content="Cancel previous timer..." HorizontalAlignment="Left" Margin="73,353,0,0" VerticalAlignment="Top" Width="219" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF008BFF" Click="cancelTimerBtn_Click"/>
+    <Grid Margin="15">
+        <Label x:Name="titleLabel" Content="Shutdown/Restart Timer" HorizontalAlignment="Left" Margin="33,0,0,324" VerticalAlignment="Bottom" FontSize="24"/>
+        <Label x:Name="inLabel" Content="in" HorizontalAlignment="Left" Margin="52,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.676,0.121" Height="40" Width="49" FontSize="22"/>
+        <ComboBox x:Name="choiceCmb" HorizontalAlignment="Left" Margin="52,72,0,0" VerticalAlignment="Top" Width="229" Height="40" FontSize="22"/>
+        <TextBox x:Name="valTxt" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="42" Margin="52,162,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="71" FontSize="22" MaxLength="6"/>
+        <ComboBox x:Name="hmsCmb" HorizontalAlignment="Left" Margin="141,162,0,0" VerticalAlignment="Top" Width="140" Height="42" FontSize="22"/>
+        <Button x:Name="okBtn" Content="OK" HorizontalAlignment="Left" Margin="52,231,0,0" VerticalAlignment="Top" Width="229" Height="50" FontSize="20" Click="okBtn_Click"/>
+        <Button x:Name="cancelTimerBtn" Content="Cancel previous timer..." HorizontalAlignment="Left" Margin="52,300,0,0" VerticalAlignment="Top" Width="229" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF008BFF" Click="cancelTimerBtn_Click"/>
+        <Button x:Name="darkModeBtn" Content="🌙" HorizontalAlignment="Left" Margin="304,356,0,0" VerticalAlignment="Top" Width="25" Height="25" RenderTransformOrigin="-1.2,-0.32" Click="darkModeBtn_Click"/>
 
     </Grid>
 </Window>

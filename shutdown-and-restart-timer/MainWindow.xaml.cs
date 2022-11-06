@@ -137,6 +137,11 @@ namespace shutdown_and_restart_timer
             Process.Start(cancelTimer);
         }
 
+        private void darkModeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Dark mode - coming soon", "Dark Mode", MessageBoxButton.OK);
+        }
+
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
             Regex regex = new Regex("[^0-9]+");
